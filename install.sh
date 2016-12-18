@@ -28,10 +28,25 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# install
-for f in .??*
-do
-  [ "$f" = ".git" ] && continue
 
-  ln -snfv ${DOT_PATH}/${f} ${HOME}/${f}
-done
+deploy() {
+  for f in .??*
+  do
+    [ "$f" = ".git" ] && continue
+
+    ln -snfv ${DOT_PATH}/${f} ${HOME}/${f}
+  done
+}
+
+
+initialize() {
+}
+
+
+if [ $1 = "deploy" -o $1  "d" ]; then
+  deploy
+elif [ $1 = "init" -o $1 = "i" ]; then
+  initialize
+else
+  deploy
+fi

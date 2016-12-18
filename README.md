@@ -7,5 +7,5 @@ vim
 
 ## install
 ```
-~/dotfiles/install.sh
+curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash
 ```
