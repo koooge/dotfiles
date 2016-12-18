@@ -1,0 +1,11 @@
+[user]
+  name = koooge
+  email = koooooge@gmail.com
+[core]
+  autocrlf = input
+  safecrlf = true
+  editor = vi
+[push]
+  default = simple
+[color]
+  ui = true
