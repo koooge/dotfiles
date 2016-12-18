@@ -1,2 +1,6 @@
 # dotfiles
-ruby, node, docker
+
+## install
+```
+~/dotfiles/install.sh
+```
