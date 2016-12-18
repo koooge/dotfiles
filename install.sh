@@ -3,16 +3,19 @@
 DOT_PATH=~/.dotfiles
 GITHUB_URL=https://github.com/koooge/dotfiles
 
-tarball="$GITHUB_URL"/archive/master.tar.gz
+tarball=${GITHUB_URL}/archive/master.tar.gz
 
-if type gxt > /dev/null 2>&1; then
-  git clone --recursive "$GITHUB_URL".git "$DOT_PATH"
+# get dotfiles from github
+if type git > /dev/null 2>&1; then
+  git clone --recursive ${GITHUB_URL}.git $DOT_PATH
 
 elif type wget > /dev/null 2>&1; then
-  wget -O - "$tarball" | tar zxv -
+  wget -O - ${tarball} | tar zxv
+  mv -f dotfiles-master $DOT_PATH
 
 elif type curl > /dev/null 2>&1; then
-  curl -L "$tarball" | tar zxv -
+  curl -L ${tarball} | tar zxv
+  mv -f dotfiles-master $DOT_PATH
 
 else
   echo "curl or wget required"
@@ -21,13 +24,14 @@ fi
 
 cd ~/.dotfiles
 if [ $? -ne 0 ]; then
-  echo "not found: $DOT_PATH"
+  echo "not found: ${DOT_PATH}"
   exit 1
 fi
 
+# install
 for f in .??*
 do
   [ "$f" = ".git" ] && continue
 
-  ln -snfv "$DOT_PATH"/"$f" "$HOME"/"$f"
+  ln -snfv ${DOT_PATH}/${f} ${HOME}/${f}
 done
