@@ -40,12 +40,13 @@ deploy() {
 
 
 initialize() {
+  : # TODO: implements
 }
 
 
-if [ $1 = "deploy" -o $1  "d" ]; then
+if [ "$1" = "deploy" -o "$1" = "d" ]; then
   deploy
-elif [ $1 = "init" -o $1 = "i" ]; then
+elif [ "$1" = "init" -o "$1" = "i" ]; then
   initialize
 else
   deploy
