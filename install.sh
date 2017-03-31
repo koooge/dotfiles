@@ -6,6 +6,7 @@ GITHUB_URL=https://github.com/koooge/dotfiles
 tarball=${GITHUB_URL}/archive/master.tar.gz
 
 # get dotfiles from github
+rm -rf $DOT_PATH
 if type git > /dev/null 2>&1; then
   git clone --recursive ${GITHUB_URL}.git $DOT_PATH
 
