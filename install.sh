@@ -19,7 +19,7 @@ elif type curl > /dev/null 2>&1; then
   mv -f dotfiles-master $DOT_PATH
 
 else
-  echo "curl or wget required"
+  echo "git, wget or curl required"
   exit 1
 fi
 
