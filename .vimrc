@@ -33,3 +33,5 @@ set wildmode=list:longest
 
 " syntax settings
 syntax on
+colorscheme molokai
+set t_Co=256
