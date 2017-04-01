@@ -32,6 +32,7 @@ set laststatus=2
 set wildmode=list:longest
 
 " syntax settings
+set term=builtin_linux
+set ttytype=builtin_linux
+colorscheme desert
 syntax on
-colorscheme molokai
-set t_Co=256
