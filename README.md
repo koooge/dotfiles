@@ -1,18 +1,12 @@
-# dotfiles
-
-## settings
-git
-
-tmux
-
-vim
+## dotfiles
+setup dotfiles for me
 
 ## deploy
 ```
 curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash
 ```
 
-## initialize
+## initialize(TODO)
 ```
 curl -L raw.github.com/koooge/dotfiles/master/install.sh | bash -s -i
 ```
