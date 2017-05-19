@@ -1,8 +1,26 @@
 " edit settings
-set tabstop=2
-set expandtab
 set number
 set cursorline
+
+" indent settings
+set autoindent
+set smartindent
+set cindent
+set smarttab
+set expandtab
+
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+
+if has("autocmd")
+  filetype plugin on
+  filetype indent on
+  autocmd FileType c setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType cpp setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType java setlocal sw=4 sts=4 ts=4 et
+endif
+
 " set cursorcolumn
 " set virtualedit=onemore
 " set smartindent
