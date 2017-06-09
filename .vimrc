@@ -41,6 +41,12 @@ set hlsearch
 nnoremap j gj
 nnoremap k gk
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+"" global
+nnoremap <C-g> :Gtags 
+nnoremap <C-i> :Gtags -f %<CR>
+nnoremap <C-j> :GtagsCursor<CR>
+nnoremap <C-n> :cn<CR>
+nnoremap <C-p> :cp<CR>
 
 " vim settings
 set fenc=utf-8
