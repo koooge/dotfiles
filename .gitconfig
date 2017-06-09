@@ -9,3 +9,5 @@
   default = simple
 [color]
   ui = true
+[rebase]
+  autostash = true
