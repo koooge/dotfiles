@@ -12,7 +12,7 @@ set autoindent
 set smartindent
 set cindent
 set smarttab
-set expandtab
+" set expandtab
 
 set tabstop=2
 set shiftwidth=2
