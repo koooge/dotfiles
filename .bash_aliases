@@ -4,4 +4,4 @@ alias la='ls -a'
 alias lla='ls -la'
 alias sl='ls'
 
-# alias treeyml="tree -fi | ruby -ryaml -e 'puts YAML::dump(ARGF.map{|e|\"src\"+e.chomp}.slice(0..-3))'"
+alias findyml='find . -type f -exec echo - {} \;'
