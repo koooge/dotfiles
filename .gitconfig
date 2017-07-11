@@ -9,6 +9,8 @@
   ui = true
 
 [alias]
+	co = checkout
+
   prune = fetch --prune
   undo = reset --soft HEAD^
   stash-all = stash save --include-untracked
