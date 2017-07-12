@@ -10,6 +10,8 @@
 
 [alias]
 	co = checkout
+	st = status
+	br = branch
 
   prune = fetch --prune
   undo = reset --soft HEAD^
