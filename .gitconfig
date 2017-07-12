@@ -1,30 +1,30 @@
 [user]
-  name = koooge
-  email = koooooge@gmail.com
+	name = koooge
+	email = koooooge@gmail.com
 [core]
-  autocrlf = input
-  safecrlf = true
-  editor = vim
+	autocrlf = input
+	safecrlf = true
+	editor = vim
 [color]
-  ui = true
+	ui = true
 
 [alias]
 	co = checkout
 	st = status
 	br = branch
 
-  prune = fetch --prune
-  undo = reset --soft HEAD^
-  stash-all = stash save --include-untracked
-  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	prune = fetch --prune
+	undo = reset --soft HEAD^
+	stash-all = stash save --include-untracked
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [merge]
-  ff = only
-  conflictstyle = diff3
+	ff = only
+	conflictstyle = diff3
 [push]
-  default = simple
-  followTags = true
+	default = simple
+	followTags = true
 [status]
-  showUntrackedFiles = all
+	showUntrackedFiles = all
 [rebase]
-  autostash = true
+	autostash = true
