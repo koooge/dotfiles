@@ -12,6 +12,7 @@
 	co = checkout
 	st = status
 	br = branch
+	cpick = cherry-pick
 
 	update = fetch --all --prune
 	undo = reset --soft HEAD^
