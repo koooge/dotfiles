@@ -21,9 +21,9 @@ set softtabstop=0
 if has("autocmd")
   filetype plugin on
   filetype indent on
-  autocmd FileType c setlocal sw=4 sts=4 ts=4
-  autocmd FileType cpp setlocal sw=4 sts=4 ts=4
-  autocmd FileType java setlocal sw=4 sts=4 ts=4
+  autocmd FileType c setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType cpp setlocal sw=4 sts=4 ts=4 et
+  autocmd FileType java setlocal sw=4 sts=4 ts=4 et
 endif
 
 " set cursorcolumn
