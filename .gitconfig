@@ -13,6 +13,7 @@
 	st = status
 	br = branch
 	cpick = cherry-pick
+	camend = commit --amend
 
 	update = fetch --all --prune
 	undo = reset --soft HEAD^
