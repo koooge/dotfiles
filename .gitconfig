@@ -9,6 +9,8 @@
 	ui = true
 
 [alias]
+	a = add
+	ad = add
 	co = checkout
 	st = status
 	br = branch
