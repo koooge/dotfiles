@@ -29,14 +29,17 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
+vim_go() {
+  curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  git clone https://github.com/fatih/vim-go.git ~/.vim/plugged/vim-go
+}
 
 deploy() {
-  for f in .??*
-  do
+  for f in .??*; do
     [ "$f" = ".git" ] && continue
-
     ln -snfv ${DOT_PATH}/${f} ${HOME}/${f}
   done
+	vim_go
 }
 
 

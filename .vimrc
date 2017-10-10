@@ -71,3 +71,8 @@ set term=builtin_linux
 set ttytype=builtin_linux
 colorscheme desert
 syntax on
+
+" vim-go
+call plug#begin()
+plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+call plug#end()
