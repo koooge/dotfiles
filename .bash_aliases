@@ -6,4 +6,4 @@ alias sl='ls'
 
 alias tf='terraform'
 
-alias findyml='find . -type f -exec echo - {} \;'
+alias treeyml='find . -type f -exec echo - {} \;'
