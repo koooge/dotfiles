@@ -4,4 +4,6 @@ alias la='ls -a'
 alias lla='ls -la'
 alias sl='ls'
 
+alias tf='terraform'
+
 alias findyml='find . -type f -exec echo - {} \;'
