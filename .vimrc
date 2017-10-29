@@ -74,5 +74,5 @@ syntax on
 
 " vim-go
 call plug#begin()
-plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 call plug#end()
