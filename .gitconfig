@@ -27,7 +27,7 @@
 	ff = only
 	conflictstyle = diff3
 [push]
-	default = simple
+	default = current
 	followTags = true
 [status]
 	showUntrackedFiles = all
