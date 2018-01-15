@@ -16,6 +16,8 @@
 	br = branch
 	cpick = cherry-pick
 	camend = commit --amend
+	reb = rebase
+	rebv = rebase --continue
 
 	update = fetch --all --prune
 	undo = reset --soft HEAD^
