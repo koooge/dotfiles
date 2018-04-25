@@ -6,5 +6,6 @@ alias sl='ls'
 
 alias vbm='VBoxManage'
 alias tf='terraform'
+alias k='kubectl'
 
 alias treeyml='find . -type f -exec echo - {} \;'
