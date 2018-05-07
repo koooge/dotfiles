@@ -1,4 +1,5 @@
 " encoding settings
+" vim-go
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp,sjis
 set fileformats=unix,dos,mac
@@ -72,8 +73,9 @@ set ttytype=builtin_linux
 colorscheme desert
 syntax on
 
-" vim-go
+" plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter', { 'do': ':PlugInstall' }
+Plug 'tpope/vim-commentary', { 'do': ':PlugInstall' }
 call plug#end()
