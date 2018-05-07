@@ -75,4 +75,5 @@ syntax on
 " vim-go
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'airblade/vim-gitgutter'
 call plug#end()
