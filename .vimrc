@@ -79,3 +79,4 @@ Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'airblade/vim-gitgutter', { 'do': ':PlugInstall' }
 Plug 'tpope/vim-commentary', { 'do': ':PlugInstall' }
 call plug#end()
+let g:go_fmt_command = "goimports"
