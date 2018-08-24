@@ -14,7 +14,7 @@
 	co = checkout
 	st = status
 	br = branch
-	cm = commit
+	cm = commit --signoff
 	cms = commit --signoff
 	cpick = cherry-pick
 	cpickc = cherry-pick --continue
