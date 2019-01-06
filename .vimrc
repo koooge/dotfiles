@@ -29,7 +29,7 @@ if has("autocmd")
   autocmd FileType html,css setlocal sw=2 sts=2 ts=2 et
   autocmd FileType ruby setlocal sw=2 sts=2 ts=2 et
   autocmd FileType perl setlocal sw=2 sts=2 ts=2 et
-  autocmd FileType python setlocal sw=2 sts=2 ts=2 et
+  autocmd FileType python setlocal sw=4 sts=4 ts=4 et
   autocmd FileType go setlocal sw=2 sts=2 ts=2
 endif
 
