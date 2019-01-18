@@ -76,6 +76,7 @@ syntax on
 " plugins
 call plug#begin()
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'airblade/vim-gitgutter', { 'do': ':PlugInstall' }
+Plug 'airblade/vim-gitgutter'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 let g:go_fmt_command = "goimports"
