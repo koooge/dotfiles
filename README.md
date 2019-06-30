@@ -1,5 +1,6 @@
 ## dotfiles
-setup dotfiles for me
+setup dotfiles for me.
+CAUTION: .gitconfig inclues koooge's name/email
 
 ## deploy
 ```
