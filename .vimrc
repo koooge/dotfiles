@@ -47,6 +47,9 @@ set hlsearch
 nnoremap j gj
 nnoremap k gk
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+"" ctags
+set tags=.tags;$HOME
+nnoremap <C-]> g<C-]>
 "" global
 nnoremap <C-g> :Gtags 
 nnoremap <C-i> :Gtags -f %<CR>
