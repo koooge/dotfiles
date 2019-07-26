@@ -34,7 +34,6 @@ endif
 
 " set cursorcolumn
 " set virtualedit=onemore
-" set smartindent
 
 " search settings
 set ignorecase
