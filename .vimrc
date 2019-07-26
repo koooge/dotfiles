@@ -1,5 +1,4 @@
 " encoding settings
-" vim-go
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp,sjis
 set fileformats=unix,dos,mac
@@ -66,6 +65,7 @@ set showmatch
 set laststatus=2
 " set visualbell
 set wildmode=list:longest
+set clipboard=unnamed,autoselect
 
 " syntax settings
 set term=builtin_linux
