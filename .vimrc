@@ -6,6 +6,7 @@ set fileformats=unix,dos,mac
 " edit settings
 set number
 set cursorline
+set backspace=indent,eol,start
 
 " indent settings
 set autoindent
