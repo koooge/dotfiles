@@ -41,5 +41,5 @@
 [rebase]
 	autostash = true
 
-#[url "git@github.com:"]
-#	insteadOf = https://github.com/
+[credential "github.com"]
+	useHttpPath = true
