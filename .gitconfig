@@ -2,7 +2,7 @@
 	autocrlf = false
 	safecrlf = true
 	editor = vim
-	excludesfile = /Users/your_user_name/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	ignorecase = false
 [color]
 	ui = true
