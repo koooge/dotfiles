@@ -1,6 +1,3 @@
-[user]
-	name = koooge
-	email = koooooge@gmail.com
 [core]
 	autocrlf = false
 	safecrlf = true
