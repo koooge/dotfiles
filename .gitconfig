@@ -13,8 +13,7 @@
 	co = checkout
 	st = status
 	br = branch
-	cm = commit --signoff
-	cms = commit --signoff
+	cm = commit --signoff --gpg-sign
 	cpick = cherry-pick
 	cpickc = cherry-pick --continue
 	camend = commit --amend
@@ -39,6 +38,9 @@
 	showUntrackedFiles = all
 [rebase]
 	autostash = true
+
+[gpg]
+	program = gpg
 
 [credential "github.com"]
 	useHttpPath = true
