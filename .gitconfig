@@ -46,5 +46,5 @@
 [gpg]
 	program = gpg
 
-[credential "github.com"]
+[credential "https://github.com"]
 	useHttpPath = true
