@@ -1,0 +1,36 @@
+# zsh-completions
+if type brew &>/dev/null; then
+ FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+ autoload -Uz compinit
+ compinit
+fi
+
+# prompt
+function parse_git_branch() {
+  git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
+}
+
+COLOR_DEF=$'\e[0m'
+COLOR_DIR=$'\e[38;5;197m'
+COLOR_GIT=$'\e[38;5;39m'
+setopt PROMPT_SUBST
+export PROMPT='${COLOR_DIR}%~${COLOR_GIT}$(parse_git_branch)${COLOR_DEF}$ '
+
+# aliases
+alias l='ls -1'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias sl='ls'
+
+alias g='cd $(ghq list --full-path | peco)'
+alias tf='terraform'
+alias k='kubectl'
+alias kcuc='kubectl config use-context'
+
+alias treeyml='find . -type f -exec echo - {} \;'
+
+# kubectl
+source <(kubectl completion zsh)
+
