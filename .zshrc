@@ -10,6 +10,7 @@ fi
 function parse_git_branch() {
   git branch 2> /dev/null | sed -n -e 's/^\* \(.*\)/[\1]/p'
 }
+setopt PROMPT_SUBST
 autoload -Uz colors && colors
 export PROMPT='%F{009}%~%f%F{033}$(parse_git_branch)%f$ '
 
