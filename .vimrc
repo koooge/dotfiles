@@ -51,7 +51,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set tags=.tags;$HOME
 nnoremap <C-]> g<C-]>
 "" global
-nnoremap <C-g> :Gtags 
+nnoremap <C-g> :Gtags
 nnoremap <C-i> :Gtags -f %<CR>
 nnoremap <C-j> :GtagsCursor<CR>
 nnoremap <C-n> :cn<CR>
@@ -78,8 +78,6 @@ syntax on
 
 " plugins
 call plug#begin()
-Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'airblade/vim-gitgutter'
 Plug 'leafgarland/typescript-vim'
 call plug#end()
-let g:go_fmt_command = "goimports"
