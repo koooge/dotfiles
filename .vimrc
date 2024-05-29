@@ -51,9 +51,6 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 set tags=.tags;$HOME
 nnoremap <C-]> g<C-]>
 "" global
-nnoremap <C-g> :Gtags
-nnoremap <C-i> :Gtags -f %<CR>
-nnoremap <C-j> :GtagsCursor<CR>
 nnoremap <C-n> :cn<CR>
 nnoremap <C-p> :cp<CR>
 
@@ -75,9 +72,3 @@ set term=builtin_linux
 set ttytype=builtin_linux
 colorscheme desert
 syntax on
-
-" plugins
-call plug#begin()
-Plug 'airblade/vim-gitgutter'
-Plug 'leafgarland/typescript-vim'
-call plug#end()
