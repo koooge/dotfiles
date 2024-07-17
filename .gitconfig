@@ -19,6 +19,7 @@
 	camend = commit --amend
 	reb = rebase
 	rebc = rebase --continue
+  logsum = log --pretty="- %s:%n    %b"
 
 	update = fetch --all --prune
 	undo = reset --soft HEAD^
