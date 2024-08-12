@@ -19,7 +19,7 @@
 	camend = commit --amend
 	reb = rebase
 	rebc = rebase --continue
-  logsum = log --pretty="- %s:%n    %b"
+	logp = log --pretty=format:'- %s:%n    %b' --reverse
 
 	update = fetch --all --prune
 	undo = reset --soft HEAD^
