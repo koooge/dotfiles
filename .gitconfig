@@ -26,6 +26,9 @@
 	stash-all = stash save --include-untracked
 	pullall =  submodule foreach git pull origin master
 
+[fetch]
+	prune = true
+	pruneTags = true
 [commit]
 	gpgsign = true
 [tag]
